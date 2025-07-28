@@ -68,28 +68,36 @@
     }
 
     .highlight {
-      color: black; /* Changed to black */
+      color: black;
       font-weight: bold;
     }
 
     .profile-img {
       max-width: 200px;
       margin-bottom: 10px;
+      border-radius: 0;
     }
 
     .about-me {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
     }
 
     .about-me img {
-      border-radius: 0; /* Changed to square */
       margin-right: 20px;
     }
 
+    .about-me div {
+      max-width: 400px;
+    }
+
     .about-me p {
-      margin: 0;
+      margin: 5px 0;
+    }
+
+    .about-me .gpa {
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -108,7 +116,10 @@
         <div>
           <p>Born on 2007/07</p>
           <p>Undergraduate Student | Computer Science & Mathematics Double Major | Truman State University | USA</p>
-          <p>GPA: 4.0 (Major GPA) | 3.85 (Cumulative GPA)<br>2024 – 2027</p>
+          <div class="gpa">
+            <p><strong>GPA:</strong> 4.0 (Major GPA) | 3.85 (Cumulative GPA)</p>
+            <p><strong>2024 – 2027</strong></p>
+          </div>
         </div>
       </div>
     </section>
