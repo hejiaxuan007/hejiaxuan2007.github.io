@@ -68,7 +68,7 @@
     }
 
     .highlight {
-      color: black;
+      color: black; /* Changed to black */
       font-weight: bold;
     }
 
@@ -80,8 +80,8 @@
 
     .about-me {
       display: flex;
+      justify-content: flex-start;
       align-items: center;
-      justify-content: space-between;
     }
 
     .about-me img {
@@ -99,6 +99,19 @@
     .about-me .gpa {
       margin-top: 15px;
     }
+
+    .school-name {
+      font-weight: normal; /* School name is not bold */
+    }
+
+    .double-major {
+      font-weight: bold; /* Double major line is bold */
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
@@ -114,8 +127,10 @@
       <div class="about-me">
         <img class="profile-img" src="assets/9c9d378d1980857cb0158b86fd53d70.jpg" alt="Jiaxuan He">
         <div>
+          <p class="name">Jiaxuan He (何佳璇)</p>
           <p>Born on 2007/07</p>
-          <p>Undergraduate Student | Computer Science & Mathematics Double Major | Truman State University | USA</p>
+          <p class="double-major">Undergraduate Student | Computer Science & Mathematics Double Major</p>
+          <p class="school-name">Truman State University | USA</p>
           <div class="gpa">
             <p><strong>GPA:</strong> 4.0 (Major GPA) | 3.85 (Cumulative GPA)</p>
             <p><strong>2024 – 2027</strong></p>
