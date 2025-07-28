@@ -16,7 +16,7 @@
 
     header {
       background-color: #4CAF50;
-      color: black; /* changed to black */
+      color: white;
       text-align: center;
       padding: 1em;
     }
@@ -68,15 +68,28 @@
     }
 
     .highlight {
-      color: #ff5722;
+      color: black; /* Changed to black */
       font-weight: bold;
     }
 
     .profile-img {
       max-width: 200px;
-      height: 200px; /* changed to make it square */
-      border-radius: 0; /* changed to square */
       margin-bottom: 10px;
+    }
+
+    .about-me {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-me img {
+      border-radius: 0; /* Changed to square */
+      margin-right: 20px;
+    }
+
+    .about-me p {
+      margin: 0;
     }
   </style>
 </head>
@@ -84,14 +97,16 @@
 
   <header>
     <h1>Jiaxuan He (何佳璇)</h1>
-    <p class="highlight">Undergraduate Student | Computer Science & Mathematics Double Major | Truman State University</p>
+    <p class="highlight">Undergraduate Student | Computer Science & Mathematics Double Major | Truman State University | USA</p>
   </header>
 
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <img class="profile-img" src="assets/9c9d378d1980857cb0158b86fd53d70.jpg" alt="Jiaxuan He">
-      <p>Born on 2007/07</p>
+      <div class="about-me">
+        <img class="profile-img" src="assets/9c9d378d1980857cb0158b86fd53d70.jpg" alt="Jiaxuan He">
+        <p>Born on 2007/07</p>
+      </div>
     </section>
 
     <section>
@@ -106,21 +121,20 @@
       <h2>Publications</h2>
       <ul>
         <li>
+          <strong>TCM-Ladder:</strong> A Benchmark for Multimodal Question Answering on Traditional Chinese Medicine<br>
+          <em>NeurIPS 2025 Submission</em><br>
+          <a href="assets/Multimodal benchmark, traditional Chinese medicine, Large Language Model, Model evaluation, Dataset construction, Domain-specific question answering.pdf" target="_blank">[PDF]</a><br>
+          <a href="assets/Supplementary Material.pdf" target="_blank">[Supplementary Material PDF]</a><br>
+          <a href="https://github.com/orangeshushu/TCM-Ladder" target="_blank">[GitHub]</a><br>
+          <a href="https://huggingface.co/datasets/timzzyus/TCM-Ladder" target="_blank">[HuggingFace]</a>
+        </li>
+        <li>
           <strong>PanoFND:</strong> A Panoptic Benchmark and Explainable Reasoning Framework for Multimodal Fake News Detection<br>
-          <em>AAAI 2026 Submission</em><br>
-          <a href="assets/Multimodal benchmark, traditional Chinese medicine, Large Language Model, Model evaluation, Dataset construction, Domain-specific question answering.pdf" target="_blank">[PDF]</a>
+          <em>AAAI 2026 Submission</em>
         </li>
         <li>
           <strong>PanoAH:</strong> A Panoptic and Hierarchical Benchmark for Audio Hallucination Evaluation for MLLMs<br>
-          <em>AAAI 2026 Submission</em><br>
-          <a href="assets/Multimodal benchmark, traditional Chinese medicine, Large Language Model, Model evaluation, Dataset construction, Domain-specific question answering.pdf" target="_blank">[PDF]</a>
-        </li>
-        <li>
-          <strong>TCM-Ladder:</strong> A Benchmark for Multimodal Question Answering on Traditional Chinese Medicine<br>
-          <em>NeurIPS 2025 Submission</em><br>
-          <a href="assets/TruCrisisAware_Integrating Naturalistic Decision Making into AI for Enhanced Disaster Response.pdf" target="_blank">[PDF]</a><br>
-          <a href="https://github.com/orangeshushu/TCM-Ladder" target="_blank">[GitHub]</a><br>
-          <a href="https://huggingface.co/datasets/timzzyus/TCM-Ladder" target="_blank">[HuggingFace]</a>
+          <em>AAAI 2026 Submission</em>
         </li>
         <li>
           <strong>TruCrisisAware:</strong> Integrating Naturalistic Decision Making into AI for Enhanced Disaster Response<br>
@@ -156,9 +170,11 @@
     <section>
       <h2>Research Experience</h2>
       <ul>
-        <li>3 Semesters as a Teaching Assistant (TA), 3 Semesters as a Research Assistant (RA)</li>
-        <li>NeurIPS 2025 First Author Paper</li>
-        <li>AAAI Two Co-authored Papers</li>
+        <li>Teaching Assistant (TA), Research Assistant (RA), and Tutor experience</li>
+        <li>CSCE 2025 First Author Paper: Drone-based System</li>
+        <li>CSCE 2025 Second Author Paper: Crisis Management System (Professor First Author)</li>
+        <li>NeurIPS 2025 First Author Paper: Disaster Response AI System</li>
+        <li>AAAI 2026 Two Co-authored Papers: Audio and Fake News Detection</li>
       </ul>
     </section>
   </div>
